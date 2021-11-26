@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 from sphere import sphere
 import argparse
 
@@ -17,18 +17,18 @@ if __name__ == "__main__":
         optparser.error("you must not supply a radius when loading from file")
 
     if opts.load:
-        print "loading Sphere from from file %s" % opts.load
+        print("loading Sphere from from file %s" % opts.load)
         my_sphere = sphere.loadSphere(opts.load)
     else:
         my_sphere = sphere.Sphere(opts.radius)
-    print "%s" % my_sphere
-    print "  radius is %s" % my_sphere.radius
+    print("%s" % my_sphere)
+    print("  radius is %s" % my_sphere.radius)
     if opts.v:
-        print "  volume is %s" % my_sphere.volume()
+        print("  volume is %s" % my_sphere.volume())
     if opts.s:
-        print "  surface is %s" % my_sphere.surface()
+        print("  surface is %s" % my_sphere.surface())
     if opts.d:
-        print "  diameter is %s" % my_sphere.diameter()
+        print("  diameter is %s" % my_sphere.diameter())
     if opts.save:
-        print "dumping Sphere to file %s" % opts.save
+        print("dumping Sphere to file %s" % opts.save)
         my_sphere.dump(opts.save)
