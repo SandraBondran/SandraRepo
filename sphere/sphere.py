@@ -9,7 +9,7 @@ class Sphere(object):
         pass
 
     # *** STEP 2 ***
-    # uncomment the 2 following lines
+    # uncomment the following 2 lines
     #def __str__(self):
     #    return '%s(%s)' % (self.__class__.__name__, self.radius)
 
@@ -33,14 +33,14 @@ class Sphere(object):
 
     def dump(self, filename):
         # *** STEP 6 ***
-        # uncomment the 2 following line
+        # uncomment the following 2 lines
         #with open(filename, "w") as f:
         #    pickle.dump(self, f)
         pass
 
 def loadSphere(filename):
     # *** STEP 7 ***
-    # uncomment the 3 following line
+    # uncomment the following 3 lines
     #with open(filename, "r") as f:
     #    sphere = pickle.load(f)
     #    return sphere
